@@ -124,6 +124,19 @@ table {
   border-spacing: 0;
 }
 
+/* Custom Properties */
+:root {
+  --page-bg: #f4f4f4;
+  --project-section-bg: #fff;
+  --project-section-title: #111;
+  --project-section-item-bg: #f4f4f4;
+  --project-section-item-hover: #eee;
+  --project-section-item-title: #111;
+  --project-section-item-description: #333;
+  --project-section-item-shadow: rgba(0, 0, 0, 0.3);
+  --project-section-section-container-shadow: rgba(0, 0, 0, 0.1);
+}
+
 /* Webpage Styling */
 
 html {
@@ -133,9 +146,7 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  background-color: var(--page-bg);
 }
 
 .project-section {
@@ -146,19 +157,20 @@ body {
 }
 
 .project-section__container {
+  width: 50vw;
   max-width: 90vw;
   max-height: 80vh;
   border-radius: 5px;
   overflow-y: scroll;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--project-section-bg);
+  box-shadow: 0 0 10px var(--project-section-section-container-shadow);
 }
 
 .project-section__title {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  color: #111;
+  color: var(--project-section-title);
   margin: 40px 0px;
 }
 
@@ -170,15 +182,15 @@ body {
 }
 
 .project-section__item {
-  background-color: #f4f4f4;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  background-color: var(--project-section-item-bg);
+  box-shadow: 0px 0px 2px var(--project-section-item-shadow);
 }
 
 .project-section__item:hover {
-  background-color: #f0f0f0;
+  background-color: var(--project-section-item-hover);
 }
 
-.project-section__link {
+.project-section-item__link {
   text-decoration: none;
   display: flex;
   gap: 10px;
@@ -186,12 +198,12 @@ body {
   padding: 20px;
 }
 
-.project-section__heading {
+.project-section-item__title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #111;
+  color: var(--project-section-item-title);
 }
 
-.project-section__description {
-  color: #333;
+.project-section-item__description {
+  color: var(--project-section-item-description);
 }

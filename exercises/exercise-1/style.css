@@ -1,0 +1,218 @@
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Properties */
+
+:root[data-theme="light"] {
+  --page-bg: #f4f4f4;
+  --lightswitch-shadow: rgba(60, 60, 60, 0.25);
+}
+
+:root[data-theme="dark"] {
+  --page-bg: #111111;
+  --lightswitch-shadow: rgba(190, 190, 190, 0.25);
+}
+
+:root {
+  --lightswitch-dark: #222222;
+  --lightswitch-dark-hover: #000000;
+  --lightswitch-light: #eeeeee;
+  --lightswitch-light-hover: #ffffff;
+}
+
+/* Webpage Styling */
+
+html {
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--page-bg);
+}
+
+.light-switch {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-switch__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.light-switch__trigger {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px var(--lightswitch-shadow);
+}
+
+.light-switch-trigger__dark,
+.light-switch-trigger__light {
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.light-switch-trigger__dark {
+  background-color: var(--lightswitch-dark);
+  color: var(--lightswitch-light);
+}
+
+.light-switch-trigger__light {
+  background-color: var(--lightswitch-light);
+  color: var(--lightswitch-dark);
+}
+
+.light-switch-trigger__dark:hover {
+  background-color: var(--lightswitch-dark-hover);
+  color: var(--lightswitch-light);
+}
+
+.light-switch-trigger__light:hover {
+  background-color: var(--lightswitch-light-hover);
+  color: var(--lightswitch-dark);
+}
