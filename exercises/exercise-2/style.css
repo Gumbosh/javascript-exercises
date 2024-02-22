@@ -179,10 +179,12 @@ input[type="number"] {
 }
 
 .bmr-form {
-  width: 300px;
+  min-width: 200px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin: 20px;
   border-radius: 10px;
   gap: 20px;
   background-color: var(--bmr-section-bg);
@@ -203,14 +205,10 @@ input[type="number"] {
   gap: 10px;
 }
 
-.space-between {
-  display: flex;
-  justify-content: space-between;
-}
-
 .space-around {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .bmr-button {
