@@ -158,7 +158,6 @@ body {
 
 .project-section__container {
   width: 50vw;
-  max-width: 90vw;
   max-height: 80vh;
   border-radius: 5px;
   overflow-y: scroll;
@@ -172,6 +171,7 @@ body {
   text-align: center;
   color: var(--project-section-title);
   margin: 40px 0px;
+  padding: 0px 20px;
 }
 
 .project-section__list {
@@ -193,8 +193,8 @@ body {
 .project-section-item__link {
   text-decoration: none;
   display: flex;
-  gap: 10px;
   flex-direction: column;
+  gap: 10px;
   padding: 20px;
 }
 
@@ -206,4 +206,24 @@ body {
 
 .project-section-item__description {
   color: var(--project-section-item-description);
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .project-section__title {
+    font-size: 1.5rem;
+  }
+  .project-section__container {
+    width: 80vw;
+  }
+  .project-section-item__title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-section__container {
+    width: 90vw;
+  }
 }
