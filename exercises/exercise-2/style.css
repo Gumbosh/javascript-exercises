@@ -152,7 +152,7 @@ body {
 }
 
 .text-bold {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 input[type="number"] {
@@ -166,7 +166,7 @@ input[type="number"] {
 
 .bmr-title {
   text-align: center;
-  font-weight: 200;
+  font-weight: lighter;
   font-size: 1.75rem;
 }
 
@@ -212,7 +212,7 @@ input[type="number"] {
 }
 
 .bmr-button {
-  font-weight: 500;
+  font-weight: bold;
   background-color: var(--bmr-btn-bg);
   color: #fff;
   padding: 8px 24px;
