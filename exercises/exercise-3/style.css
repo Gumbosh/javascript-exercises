@@ -128,7 +128,8 @@ table {
 
 :root {
   --page-bg: #f4f4f4;
-  --text: #111111;
+  --text: #000;
+  --text-gray: #222;
   --link: #007bff;
   --link-hover: #008bff;
   --new-recipe-btn-text: #fff;
@@ -179,7 +180,7 @@ body {
 }
 
 .header__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .header__new-recipe-btn {
@@ -210,6 +211,10 @@ body {
   font-weight: lighter;
 }
 
+.recipe__category {
+  color: var(--text-gray);
+}
+
 .recipe__image {
   height: 25vh;
   min-height: 200px;
@@ -223,6 +228,7 @@ body {
 }
 .recipe__ingredients th,
 .recipe__ingredients td {
+  color: var(--text-gray);
   padding: 8px;
   border-bottom: 1px solid #ddd;
 }
@@ -237,6 +243,7 @@ body {
 }
 
 .recipe__source {
+  font-size: 1rem;
   font-weight: bold;
   color: var(--link);
   text-decoration: none;
