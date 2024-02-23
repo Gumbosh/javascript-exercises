@@ -165,7 +165,7 @@ input[type="number"] {
 
 .bmr-title {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .bmr-section {
@@ -177,13 +177,13 @@ input[type="number"] {
 }
 
 .bmr-form {
-  min-width: 200px;
+  min-width: 260px;
   width: 500px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   gap: 20px;
   background-color: var(--bmr-section-bg);
   box-shadow: 0px 0px 10px var(--bmr-form-shadow);

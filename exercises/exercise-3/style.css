@@ -145,7 +145,7 @@ table {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 4px 8px var(--recipe-container-shadow);
-  min-width: 300px;
+  min-width: 260px;
   width: 50vw;
 }
 
@@ -180,7 +180,7 @@ body {
 }
 
 .header__title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 .header__new-recipe-btn {
